@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Rock Paper & Scissors</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+<body>
+
+  <div class="grid">
+    <div class="heading">
+      <h2 id="title">Rock Paper & Scissors</h2>
+    </div>
+
+    <h3 id="subtitle">Rules are simple: Select your object and see if you win against the computer. There is a total of 5 rounds. So, Good luck!</h3>
+
+    <div class="game-controls">
+
+      <div id="playerBoard">
+        <h2>Player:</h2>
+        <hr class="titleUnderline">
+        <h1 id="playerScore">0</h1>
+      </div>
+
+      <div class="cards">
+
+        <div class="card" id="Rock">
+          <img src="img/rock.png" alt="Rock">
+          <div class="container">
+            <h4>Rock</h4>
+          </div>
+        </div>
+
+        <div class="card" id="Paper">
+          <img src="img/paper.png" alt="Paper">
+          <div class="container">
+            <h4>Paper</h4>
+          </div>
+        </div>
+
+        <div class="card" id="Scissors">
+          <img src="img/scissors.png" alt="Scissors">
+          <div class="container">
+            <h4>Scissors</h4>
+          </div>
+        </div>
+      </div>
+
+        <div id="computerBoard">
+          <h2>Computer:</h2>
+          <hr class="titleUnderline">
+          <h1 id="computerScore">0</h1>
+      </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="content">
+        <h3 id="game-result">Heading</h3>
+        <p id="replay-text">Would you like to play again?</p>
+        <button class="yes" onclick="startAgain()">Yes</button>
+        <button class="no" onclick="dismiss()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
